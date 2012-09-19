@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  make: MyString
+  serial: 1
+  location_id: 1
+
+two:
+  type: 
+  make: MyString
+  serial: 1
+  location_id: 1

@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @inventory.type %>
+</p>
+
+<p>
+  <b>Make:</b>
+  <%= @inventory.make %>
+</p>
+
+<p>
+  <b>Serial:</b>
+  <%= @inventory.serial %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @inventory.location_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_inventory_path(@inventory) %> |
+<%= link_to 'Back', inventories_path %>
