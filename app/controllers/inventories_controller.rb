@@ -25,7 +25,7 @@ class InventoriesController < ApplicationController
   # GET /inventories/new.json
   def new
     @inventory = Inventory.new
-
+ @locations = Location.all.map{|location| [location.address, location.id]}
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @inventory }
@@ -35,6 +35,7 @@ class InventoriesController < ApplicationController
   # GET /inventories/1/edit
   def edit
     @inventory = Inventory.find(params[:id])
+    @locations = Location.all.map{|location| [location.address, location.id]}
   end
 
   # POST /inventories

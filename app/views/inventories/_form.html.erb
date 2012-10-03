@@ -9,11 +9,13 @@
       <% end %>
       </ul>
     </div>
+
+    
   <% end %>
 
   <div class="field">
-    <%= f.label :type %><br />
-    <%= f.text_field :type %>
+    <%= f.label :model %><br />
+    <%= f.text_field :model %>
   </div>
   <div class="field">
     <%= f.label :make %><br />
@@ -25,7 +27,7 @@
   </div>
   <div class="field">
     <%= f.label :location_id %><br />
-    <%= f.number_field :location_id %>
+    <%= f.select :location_id,@locations %>
   </div>
   <div class="actions">
     <%= f.submit %>

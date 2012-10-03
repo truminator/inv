@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(:version => 20120912023230) do
 
   create_table "inventories", :force => true do |t|
-    t.string   "type"
+    t.string   "model"
     t.string   "make"
     t.integer  "serial"
     t.integer  "location_id"
